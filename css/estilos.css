@@ -1,0 +1,45 @@
+body{
+	background-image:url('https://i.pinimg.com/originals/5d/3e/31/5d3e3183dbabb94b5d403ee1deca3941.png');
+	background-size: 100%;
+	font-family: Copperplate Gothic Light; 
+	height: 100vh;
+	backdrop-filter: blur(4px);	
+}
+
+.menu{
+	background-color: transparent #ffffff;
+}
+
+.menu li{
+	list-style: none;
+}
+
+.menu ul{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+li a {
+	color: /*teal*/ /*#003366;*/ whitesmoke;
+	text-decoration: none;
+	
+}
+li a:hover{
+	text-decoration: underline;
+}
+
+.site-title, .site-subtitle{
+	color: whitesmoke;
+	text-align: center;
+	
+}	
+
+.site-subtitle{
+	font-style: italic;
+}
+
+
+	
+	
+	
