@@ -3,7 +3,7 @@ body{
 	background-size: 100%;
 	font-family: Copperplate Gothic Light; 
 	height: 100vh;
-	backdrop-filter: blur(4px);	
+	backdrop-filter: blur(2px);	
 }
 
 .menu{
