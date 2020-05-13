@@ -1,17 +1,57 @@
+/* reset do css */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body{
-	background-image:url('https://i.pinimg.com/originals/5d/3e/31/5d3e3183dbabb94b5d403ee1deca3941.png');
+	background-image:url('../img/background.png');
 	background-size: 100%;
-	font-family: Copperplate Gothic Light; 
+	font-family: Copperplate Gothic Light;
 	height: 100vh;
-	backdrop-filter: blur(2px);	
+	/*backdrop-filter: blur(2px);	*/
+	font-size: 12px;
+}
+
+/*Breakpoint*/
+/* Tela com pelo menos 400px, vai carregar estes estilos*/
+@media (min-width: 400px){
+	body{ 
+		font-size: 14px;	
+	}
+	
+}
+/*Breakpoint*/
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1200px){
+  body{
+    font-size: 22px;
+  }
+}
+
+header{
+	 height: 120vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
 }
 
 .menu{
-	background-color: none;
+	background-color: white;
+	position: fixed;
+	width: 100vw;
+	top: 0;
 }
 
 .menu li{
 	list-style: none;
+	
 }
 
 .menu ul{
@@ -20,8 +60,15 @@ body{
 	
 }
 
+.menu a{
+	display: block;
+	padding: 5px;	
+	
+	
+}
+
 li a {
-	color: /*teal*/ /*#003366;*/ whitesmoke;
+	color: /*teal*/ /*#003366;*/ teal;
 	text-decoration: none;
 	
 }
@@ -32,11 +79,53 @@ li a:hover{
 .site-title, .site-subtitle{
 	color: whitesmoke;
 	text-align: center;
-	
-}	
+		
+}
+
+.site-title{
+	font-size: 4em;
+}
 
 .site-subtitle{
 	font-style: italic;
+}
+
+.secao{
+	margin-top:50px;
+}
+
+.portfolio{
+	color: whitesmoke;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grupo1, .grupo2{
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+/*.grupo2{
+	margin-top:20px;
+	display: flex;
+	justify-content: center;
+	margin:20px;
+	
+}*/
+
+.legenda{
+	color: whitesmoke;
+	text-align: center;
+	font-size: 20px;
+}
+
+.img-portfolio{
+	border-radius: 30%;
+	height: 100px;
+	width: 100px;
+	margin:30px;
 }
 
 
