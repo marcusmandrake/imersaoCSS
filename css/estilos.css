@@ -6,9 +6,10 @@
 }
 
 body{
-	background-image:url('../img/background.png');
+	background-image: url('../img/background.png');
 	background-size: auto 100%;
-	font-family: Copperplate Gothic Light;
+	/*font-family: Copperplate Gothic Light;*/
+	font-family: 'Courier Prime', monospace;
 	height: 100%;
 	/*backdrop-filter: blur(2px);	*/
 	font-size: 12px;
@@ -47,6 +48,7 @@ header{
 	position: fixed;
 	width: 100vw;
 	top: 0;
+	font-family: 'Yeon Sung', cursive;
 }
 
 .menu li{
@@ -79,31 +81,96 @@ li a:hover{
 .site-title, .site-subtitle{
 	color: whitesmoke;
 	text-align: center;
+	
 		
 }
 
 .site-title{
 	font-size: 4em;
+	font-family: 'Do Hyeon', sans-serif;
+	
 }
 
 .site-subtitle{
 	font-style: italic;
+	font-family: 'Yeon Sung', cursive;
+	line-height: 1.5em;
 }
 
-.secao{
+/*.secao{
 	margin-top:50px;
-}
+}*/
 
 .portfolio{
+  padding: 1em;
+  height: 50vh;
+  background-color: rgb(8, 22, 50);
+  
+}
+
+.portfolio h2{
+	color: whitesmoke;
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	font-family: 'Yeon Sung', cursive;
+	margin-bottom: 0.8em;
+	
+}
+
+.portfolio .grupo1{
+	/*margin: 20px;*/
+	display: grid;
+	gap: 1em;
+	
+	/*display: flex;*/
+	/*justify-content: center;*/
+}
+
+@media (min-width: 400px){
+	.portfolio, .portfolio .grupo1{
+		grid-template-columns: 120px 120px;
+		
+		
+}
+
+@media (min-width: 600px){
+	.portfolio, .portfolio .grupo1{
+		grid-template-columns: repeat(4, 120px);
+		justify-content: center;
+		align-content: center;
+		/*height: calc(100vh - 1em - 10px);*/
+		
+		
+}
+
+.portfolio figure {
+	text-align: center /* vai mexer nas imagens tb*/
+}	
+
+.contato{
+	padding: 1em;
+	height: 40vh;
+	background-color: rgb(8, 22, 31);
+}
+
+.contato h2{
 	color: whitesmoke;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: 'Yeon Sung', cursive;
+	margin-bottom: 0.8em;
+	/*margin-top:50px;*/
+	
 }
-.grupo1, .grupo2{
-	margin: 20px;
+
+
+.contato .grupo2{
+	/*margin: 20px;*/
 	display: flex;
 	justify-content: center;
+	
 	
 }
 
@@ -115,19 +182,42 @@ li a:hover{
 	
 }*/
 
+.img-portfolio{
+	border-radius: 10%;
+	height: 100px;
+	width: 100px;
+	margin:15px;
+}
+
+.img-portfolio1{
+	border-radius: 10%;
+	height: 100px;
+	width: 150px;
+	margin:-90px;
+}
+
+.img-contato{
+	border-radius: 30%;
+	height: 60px;
+	width: 60px;
+	margin:15px;
+}
+
 .legenda{
 	color: whitesmoke;
 	text-align: center;
-	font-size: 20px;
-	margin-top: -20px;
+	font-size: 15px;
+	margin-top:-20px;
 }
 
-.img-portfolio{
-	border-radius: 30%;
-	height: 100px;
-	width: 100px;
-	margin:30px;
+.legenda1{
+	color: whitesmoke;
+	text-align: center;
+	font-size: 15px;
+	margin-top:-30px;
 }
+
+
 
 
 	
